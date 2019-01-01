@@ -13,7 +13,7 @@
         <Button x:Name="BtnLoadGame" Text="Load Game" IsEnabled="False"></Button>
         <Button x:Name="BtnSettings" Text="Settings"></Button>
         <Button x:Name="BtnExitGame" Text="Exit Game"></Button>
-        
+
     </StackLayout>
 
 </ContentPage>
