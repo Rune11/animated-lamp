@@ -9,7 +9,7 @@
                 VerticalOptions="Start"
                 HorizontalOptions="Center"
                 />
-        <Button x:Name="BtnNewGame" Text="New Game"></Button>
+        <Button x:Name="BtnNewGame" Text="New Game" Clicked="BtnNewGame_Clicked"></Button>
         <Button x:Name="BtnLoadGame" Text="Load Game" IsEnabled="False"></Button>
         <Button x:Name="BtnSettings" Text="Settings"></Button>
         <Button x:Name="BtnExitGame" Text="Exit Game"></Button>

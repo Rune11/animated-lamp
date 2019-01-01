@@ -13,5 +13,10 @@ namespace XamarinRpg
         {
             InitializeComponent();
         }
+
+        private void BtnNewGame_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NewGamePage();
+        }
     }
 }
