@@ -5,10 +5,15 @@
              x:Class="XamarinRpg.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Main menu"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                />
+        <Button x:Name="BtnNewGame" Text="New Game"></Button>
+        <Button x:Name="BtnLoadGame" Text="Load Game" IsEnabled="False"></Button>
+        <Button x:Name="BtnSettings" Text="Settings"></Button>
+        <Button x:Name="BtnExitGame" Text="Exit Game"></Button>
+        
     </StackLayout>
 
 </ContentPage>
