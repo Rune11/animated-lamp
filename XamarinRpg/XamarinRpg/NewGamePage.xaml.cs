@@ -62,7 +62,7 @@ namespace XamarinRpg
                 App.Current.Properties["existing"] = ExistingCharacters;
             }
 
-            
+            App.Current.MainPage = new CharacterPage();
 
         }
     }
