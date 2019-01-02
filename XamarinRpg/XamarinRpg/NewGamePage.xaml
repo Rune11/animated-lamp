@@ -7,6 +7,10 @@
             <Label Text="This is the new game page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="NameEntry" Text="Name"></Entry>
+            
+            <Button x:Name="StartBtn" Text="Start" Clicked="StartBtn_Clicked"></Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

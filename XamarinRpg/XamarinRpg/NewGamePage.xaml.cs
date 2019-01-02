@@ -16,5 +16,16 @@ namespace XamarinRpg
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void StartBtn_Clicked(object sender, EventArgs e)
+        {
+            if ( null != NameEntry.Text || "" != NameEntry.Text) {
+                App.Current.Properties["name"] = NameEntry.Text;
+                //App.Current.Properties[]
+            }
+
+            
+
+        }
+    }
 }

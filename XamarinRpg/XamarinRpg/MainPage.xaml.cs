@@ -18,5 +18,10 @@ namespace XamarinRpg
         {
             App.Current.MainPage = new NewGamePage();
         }
+
+        private void BtnExitGame_Clicked(object sender, EventArgs e)
+        {
+            App.Current.Quit();
+        }
     }
 }
