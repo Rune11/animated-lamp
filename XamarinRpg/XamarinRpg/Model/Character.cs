@@ -17,8 +17,14 @@ namespace XamarinRpg.Model
         // Contructor for new character
         public Character(string name) {
             Name = name;
+            Strength = 0;
+            Agility = 0;
+            Endurance = 0;
+            Intelligence = 1;
+            Wisdom = 0;
         }
 
+        // Constructor for loading an existing character
         public Character(string name, int str, int agi, int end, int intel, int wis) {
             Name = name;
             Strength = str;
