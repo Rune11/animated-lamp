@@ -12,6 +12,7 @@ namespace XamarinRpg
         public MainPage()
         {
             InitializeComponent();
+            BtnLoadGame.IsEnabled = true; // for debugging
             if (App.Current.Properties.ContainsKey("existing")) {
                 BtnLoadGame.IsEnabled = true;
             }

@@ -15,6 +15,25 @@ namespace XamarinRpg
 		public LoadPage ()
 		{
 			InitializeComponent ();
+            //debug
+            //var DebugList = new List<string>();
+            //DebugList.Add("Dummy1");
+            //DebugList.Add("Dummy2");
+            //DebugList.Add("Dummy3");
+            //App.Current.Properties["existing"] = DebugList;
+            //debug end
+
+            if (App.Current.Properties.ContainsKey("existing"))
+            {
+                List<string> ExistingList = App.Current.Properties["existing"] as List<string>;
+
+                foreach (string e in ExistingList)
+                {
+                    Button btn = new Button { Text = e };
+                    Layout.Children.Add(btn);
+                }
+                
+            }
 		}
 	}
 }
