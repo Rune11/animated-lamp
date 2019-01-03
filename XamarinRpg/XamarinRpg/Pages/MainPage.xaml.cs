@@ -12,7 +12,12 @@ namespace XamarinRpg
         public MainPage()
         {
             InitializeComponent();
+            if (App.Current.Properties.ContainsKey("existing")) {
+                BtnLoadGame.IsEnabled = true;
+            }
         }
+
+        #region Button click event handlers
 
         private void BtnNewGame_Clicked(object sender, EventArgs e)
         {
@@ -23,5 +28,12 @@ namespace XamarinRpg
         {
             App.Current.Quit();
         }
+
+        private void BtnLoadGame_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new LoadPage();
+        }
+
+        #endregion
     }
 }
