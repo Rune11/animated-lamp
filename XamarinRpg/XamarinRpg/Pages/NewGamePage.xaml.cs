@@ -32,7 +32,8 @@ namespace XamarinRpg
                 System.Diagnostics.Debug.WriteLine("Generate new character object and save it to <character name> field");
                 Character PlayerChar = new Character(CharacterName);
                 // save it -- note: later the <charactername> key should point to a character + gamestate object
-                App.Current.Properties[CharacterName] = PlayerChar;
+                //serializing the object with Utils.Serializer
+                App.Current.Properties[CharacterName] = Utils.Serializer.SerializeToJson(PlayerChar);
 
 
                 List<string> ExistingCharacters;
