@@ -12,6 +12,8 @@ namespace XamarinRpg.Model
         private int Endurance;
         private int Intelligence;
         private int Wisdom;
+        private int MaxHP;
+        private int CurrentHP;
 
         #region Constructor
         // Contructor for new character
@@ -22,6 +24,8 @@ namespace XamarinRpg.Model
             Endurance = 0;
             Intelligence = 1;
             Wisdom = 0;
+            MaxHP = 100;
+            CurrentHP = MaxHP;
         }
 
         // Constructor for loading an existing character
