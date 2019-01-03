@@ -4,33 +4,25 @@ using System.Text;
 
 namespace XamarinRpg.Model
 {
-    [System.Runtime.Serialization.KnownType("Character")]
-    [System.Runtime.Serialization.DataContract]
+
     public class Character
     {
         #region private data
-        [System.Runtime.Serialization.DataMember]
+
         private string Name;
 
-        [System.Runtime.Serialization.DataMember]
         private int Strength;
 
-        [System.Runtime.Serialization.DataMember]
         private int Agility;
 
-        [System.Runtime.Serialization.DataMember]
         private int Endurance;
 
-        [System.Runtime.Serialization.DataMember]
         private int Intelligence;
 
-        [System.Runtime.Serialization.DataMember]
         private int Wisdom;
 
-        [System.Runtime.Serialization.DataMember]
         private int MaxHP;
 
-        [System.Runtime.Serialization.DataMember]
         private int CurrentHP;
         #endregion
 
