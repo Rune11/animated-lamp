@@ -25,7 +25,7 @@ namespace XamarinRpg
 
             if (App.Current.Properties.ContainsKey("existing"))
             {
-                List<string> ExistingList = App.Current.Properties["existing"] as List<string>;
+                List<string> ExistingList = Utils.Serializer.DeserializeFromJson<List<string>>(App.Current.Properties["existing"] as string);
 
                 foreach (string e in ExistingList)
                 {

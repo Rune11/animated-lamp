@@ -40,7 +40,7 @@ namespace XamarinRpg
                 if (App.Current.Properties.ContainsKey("existing"))
                 {
                     System.Diagnostics.Debug.WriteLine("There are other saves");
-                    ExistingCharacters = App.Current.Properties["existing"] as List<string>;
+                    ExistingCharacters = Utils.Serializer.DeserializeFromJson<List<string>>(App.Current.Properties["existing"] as string);
                     if (ExistingCharacters.Contains(CharacterName))
                     {
                         System.Diagnostics.Debug.WriteLine("WARNING: a character with this name already exists!");
@@ -60,7 +60,7 @@ namespace XamarinRpg
                     ExistingCharacters = new List<string>();
                     ExistingCharacters.Add(CharacterName);
                 }
-                App.Current.Properties.Add("existing", ExistingCharacters);
+                App.Current.Properties["existing"] = Utils.Serializer.SerializeToJson(ExistingCharacters);
             }
 
             App.Current.SavePropertiesAsync();
