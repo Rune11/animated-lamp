@@ -4,6 +4,7 @@ using System.Text;
 
 namespace XamarinRpg.Model
 {
+    [System.Runtime.Serialization.KnownType("Character")]
     [System.Runtime.Serialization.DataContract]
     public class Character
     {

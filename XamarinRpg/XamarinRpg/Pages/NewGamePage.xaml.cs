@@ -25,7 +25,7 @@ namespace XamarinRpg
 
             if ( null != CharacterName || "" != CharacterName || "name" != CharacterName || "existing" != CharacterName) {
                 // name of the current/last used character, it should help in quick loading with "continue game" button
-                App.Current.Properties["name"] = CharacterName;
+                App.Current.Properties.Add("name", CharacterName);
                 System.Diagnostics.Debug.WriteLine("Writning "+ CharacterName +" to -name- field");
 
                 // create new character object
@@ -59,7 +59,7 @@ namespace XamarinRpg
                     ExistingCharacters = new List<string>();
                     ExistingCharacters.Add(CharacterName);
                 }
-                App.Current.Properties["existing"] = ExistingCharacters;
+                App.Current.Properties.Add("existing", ExistingCharacters);
             }
 
             App.Current.SavePropertiesAsync();

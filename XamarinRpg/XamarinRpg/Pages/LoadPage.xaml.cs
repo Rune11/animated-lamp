@@ -30,7 +30,7 @@ namespace XamarinRpg
                 foreach (string e in ExistingList)
                 {
                     Button btn = new Button { Text = e };
-                    Layout.Children.Add(btn);
+                    LoadLayout.Children.Add(btn);
                 }
                 
             }

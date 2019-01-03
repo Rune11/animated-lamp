@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinRpg.LoadPage">
     <ContentPage.Content>
-        <StackLayout x:Name="Layout">
+        <StackLayout x:Name="LoadLayout">
             <Label Text="Welcome to Load Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
