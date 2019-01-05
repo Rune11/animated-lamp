@@ -17,5 +17,18 @@ namespace XamarinRpg.Model
             Capacity = 12;
         }
         #endregion
+
+        #region Public Functions
+
+        public bool AddItem(Item item) {
+            if (Capacity > ItemList.Count)
+            {
+                ItemList.Add(item);
+                return true;
+            }
+            return false;
+        }
+
+        #endregion
     }
 }
