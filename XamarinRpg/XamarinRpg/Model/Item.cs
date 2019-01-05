@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinRpg.Model
 {
-    class Item
+    public class Item
     {
         #region private data
         private int ID;
