@@ -26,7 +26,28 @@ namespace XamarinRpg
                 else
                 {
                     System.Diagnostics.Debug.WriteLine("ERROR: <CharacterName> key missing from properties!");
+                    return;
                 }
+                Label NameLabel = new Label { Text = CharacterName };
+                CharacterPageLayout.Children.Add(NameLabel);
+
+                Label LevelLabel = new Label { Text = "Level: " };
+                CharacterPageLayout.Children.Add(LevelLabel);
+
+                Label HealthLabel = new Label { Text = "HP: / " };
+                CharacterPageLayout.Children.Add(HealthLabel);
+
+                Label StrengthLabel = new Label { Text = "Strength: " };
+                CharacterPageLayout.Children.Add(StrengthLabel);
+
+                Label EnduranceLabel = new Label { Text = "Endurance: " };
+                CharacterPageLayout.Children.Add(EnduranceLabel);
+
+                Label AgilityLabel = new Label { Text = "Agility: " };
+                CharacterPageLayout.Children.Add(AgilityLabel);
+
+                Label WisdomLabel = new Label { Text = "Wisdom: " };
+                CharacterPageLayout.Children.Add(WisdomLabel);
             }
             else
             {
