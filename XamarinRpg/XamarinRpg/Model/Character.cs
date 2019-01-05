@@ -28,6 +28,8 @@ namespace XamarinRpg.Model
         private int Level;
 
         private int XP;
+
+        private Inventory Inv;
         #endregion
 
         #region Constructor
@@ -43,6 +45,7 @@ namespace XamarinRpg.Model
             CurrentHP = MaxHP;
             Level = 1;
             XP = 0;
+            Inv = new Inventory();
         }
 
         // Constructor for loading an existing character
