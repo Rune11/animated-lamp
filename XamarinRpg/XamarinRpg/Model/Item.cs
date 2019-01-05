@@ -7,12 +7,12 @@ namespace XamarinRpg.Model
     class Item
     {
         #region private data
-
+        private int ID;
         #endregion
 
         #region Constructor
-        public Item() {
-
+        public Item(int id) {
+            ID = id;
         }
         #endregion
     }
