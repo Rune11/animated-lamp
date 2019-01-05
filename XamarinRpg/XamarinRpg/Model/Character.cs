@@ -24,6 +24,10 @@ namespace XamarinRpg.Model
         private int MaxHP;
 
         private int CurrentHP;
+
+        private int Level;
+
+        private int XP;
         #endregion
 
         #region Constructor
@@ -37,9 +41,13 @@ namespace XamarinRpg.Model
             Wisdom = 0;
             MaxHP = 100;
             CurrentHP = MaxHP;
+            Level = 1;
+            XP = 0;
         }
 
         // Constructor for loading an existing character
+        // most likely we wont need that constructror
+        /*
         public Character(string name, int str, int agi, int end, int intel, int wis) {
             Name = name;
             Strength = str;
@@ -47,7 +55,7 @@ namespace XamarinRpg.Model
             Endurance = end;
             Intelligence = intel;
             Wisdom = wis;
-        }
+        }*/
         #endregion
 
         #region Public functions

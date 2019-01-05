@@ -4,9 +4,7 @@
              x:Class="XamarinRpg.CharacterPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the character page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
