@@ -19,9 +19,10 @@ namespace XamarinRpg
             if (App.Current.Properties.ContainsKey("name"))
             {
                 string CharacterName = App.Current.Properties["name"] as string;
+                Character PlayerCharacter;
                 if (App.Current.Properties.ContainsKey(CharacterName))
                 {
-                    Character PlayerCharacter = Utils.Serializer.DeserializeFromJson<Character>(App.Current.Properties[CharacterName] as string);
+                    PlayerCharacter = Utils.Serializer.DeserializeFromJson<Character>(App.Current.Properties[CharacterName] as string);
                 }
                 else
                 {
@@ -31,22 +32,22 @@ namespace XamarinRpg
                 Label NameLabel = new Label { Text = CharacterName };
                 CharacterPageLayout.Children.Add(NameLabel);
 
-                Label LevelLabel = new Label { Text = "Level: " };
+                Label LevelLabel = new Label { Text = "Level: " + PlayerCharacter.Lvl };
                 CharacterPageLayout.Children.Add(LevelLabel);
 
-                Label HealthLabel = new Label { Text = "HP: / " };
+                Label HealthLabel = new Label { Text = "HP: " + PlayerCharacter.CurrHP + "/" + PlayerCharacter.MaxHP };
                 CharacterPageLayout.Children.Add(HealthLabel);
 
-                Label StrengthLabel = new Label { Text = "Strength: " };
+                Label StrengthLabel = new Label { Text = "Strength: " + PlayerCharacter.Str };
                 CharacterPageLayout.Children.Add(StrengthLabel);
 
-                Label EnduranceLabel = new Label { Text = "Endurance: " };
+                Label EnduranceLabel = new Label { Text = "Endurance: " + PlayerCharacter.End};
                 CharacterPageLayout.Children.Add(EnduranceLabel);
 
-                Label AgilityLabel = new Label { Text = "Agility: " };
+                Label AgilityLabel = new Label { Text = "Agility: " + PlayerCharacter.Agi};
                 CharacterPageLayout.Children.Add(AgilityLabel);
 
-                Label WisdomLabel = new Label { Text = "Wisdom: " };
+                Label WisdomLabel = new Label { Text = "Wisdom: " + PlayerCharacter.Wis};
                 CharacterPageLayout.Children.Add(WisdomLabel);
             }
             else
